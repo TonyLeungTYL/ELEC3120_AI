@@ -487,53 +487,32 @@ Before sharing the URL with students, verify:
 If all six pass, you're ready to share with the class. 🎓
 六個都 pass，就可以分享俾全班！🎓
 
-# ─── LearningPacer environment variables ──────────────────────────────────
-# Copy this file to `.env.local` and fill in your own values.
-# 將此檔案複製為 `.env.local` 並填入你自己的數值。
-#
-# ⚠️  NEVER commit .env or .env.local to GitHub.
-# ⚠️  千祈唔好將 .env 或 .env.local commit 上 GitHub。
-#
-# See DEPLOYMENT.md for step-by-step instructions on where to get each key.
-# 詳細步驟請睇 DEPLOYMENT.md。
-# ─────────────────────────────────────────────────────────────────────────
+ ─── LearningPacer environment variables ──────────────────────────────────
+ Copy this file to `.env.local` and fill in your own values.
+ 將此檔案複製為 `.env.local` 並填入你自己的數值。
 
-# ─── REQUIRED ─────────────────────────────────────────────────────────────
+ ⚠️  NEVER commit .env or .env.local to GitHub.
+ ⚠️  千祈唔好將 .env 或 .env.local commit 上 GitHub。
 
-# Poe API key — powers all AI features (chat, quiz, agent, study plan…)
-# Get from: https://poe.com → Settings → API Keys
+See DEPLOYMENT.md for step-by-step instructions on where to get each key.
+詳細步驟請睇 DEPLOYMENT.md。
+─────────────────────────────────────────────────────────────────────────
+
+─── REQUIRED ─────────────────────────────────────────────────────────────
+
+Poe API key — powers all AI features (chat, quiz, agent, study plan…)
+Get from: https://poe.com → Settings → API Keys
 POE_KEY=your-poe-api-key-here
 
-# PostgreSQL connection string. Free options:
-#   - Neon:     https://neon.tech         (recommended — serverless, 0.5GB free)
-#   - Supabase: https://supabase.com      (free Postgres included with auth)
-#   - Vercel:   https://vercel.com/storage/postgres
-# IMPORTANT: must end with `?sslmode=require` for Neon.
+PostgreSQL connection string. Free options:
+   - Neon:     https://neon.tech         (recommended — serverless, 0.5GB free)
+   - Supabase: https://supabase.com      (free Postgres included with auth)
+   - Vercel:   https://vercel.com/storage/postgres
+IMPORTANT: must end with `?sslmode=require` for Neon.
 DATABASE_URL=postgresql://user:password@host/dbname?sslmode=require
 
-# Supabase — for magic-link login. Free tier: 50,000 monthly active users.
-# Get from: https://supabase.com → your project → Settings → API
+Supabase — for magic-link login. Free tier: 50,000 monthly active users.
+Get from: https://supabase.com → your project → Settings → API
 SUPABASE_URL=https://your-project-ref.supabase.co
 SUPABASE_PUBLISHABLE_KEY=your-anon-public-key
 SUPABASE_KEY=your-service-role-secret-key
-
-# ─── OPTIONAL ─────────────────────────────────────────────────────────────
-
-# Resend — only needed if you want to send magic-link emails from your own
-# domain. Without this, Supabase sends emails from its default address.
-# Get from: https://resend.com → API Keys
-RESEND_API_KEY=
-
-# Admin secret — gates the lecture re-seeding endpoint
-# `/api/knowledge/seed-lectures`. Make up any random string.
-# Localhost requests bypass this; only required in production.
-ADMIN_SECRET=
-
-# ─── ADVANCED — model overrides (defaults are sensible) ───────────────────
-# Override default Poe bots per feature. Leave commented for sensible defaults.
-#
-# POE_CHAT_MODEL=Claude-Opus-4.7
-# POE_QUIZ_MODEL=Gemini-3.1-Pro
-# POE_STUDY_PLAN_MODEL=Gemini-3.1-Pro
-# POE_AGENT_MODEL=Claude-Opus-4.7
-# POE_VISION_MODEL=Gemini-3.1-Pro
