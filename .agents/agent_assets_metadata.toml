@@ -1,0 +1,68 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "-Dm1-gztkrnTIQc7eEE9O"
+uri = "file://exports/learningpacer-source.tar.gz"
+type = "unspecified"
+title = "LearningPacer 全部源碼 (186 個檔案, 368KB)"
+
+[[outputs]]
+id = "lVzPvvZCZ40BhiGDb5Jye"
+uri = "file://exports/learningpacer-full.tar.gz"
+type = "unspecified"
+title = "LearningPacer — Source + 19 lecture PDFs (183 MB)"
+
+[[outputs]]
+id = "syrlUeVk7_rVh4Z4bfus9"
+uri = "file://generated/LearningPacer_Presentation.pptx"
+type = "slides"
+title = "LearningPacer Presentation Deck (18 slides, A++++++)"
+
+[[outputs]]
+id = "bHH1Jcn3HVUGl69SMfA5h"
+uri = "file://generated/LearningPacer_Presentation_QA_Report.md"
+type = "text"
+title = "Anticipated Q&A Report — Profs / TAs / Students / Curveballs"
+
+[[outputs]]
+id = "MMKiDSqHgNkeNuleAYJIp"
+uri = "file://exports/learningpacer-source.zip"
+type = "unspecified"
+title = "LearningPacer Source Code (GitHub-ready)"
+
+[[outputs]]
+id = "x6ACcsq92otaPTvHLJPaQ"
+uri = "file://.local/exam-pdfs/ELEC3120_Mock_Midterm_and_Final.pdf"
+type = "pdf"
+title = "ELEC3120 Mock Midterm + Final Exam (state-of-the-art practice paper)"
+
+[[outputs]]
+id = "cLMZKqdnJSDM1gQW61QM2"
+uri = "file://.local/exam-pdfs/ELEC3120_Trap_Analysis_and_Answering_Techniques.pdf"
+type = "pdf"
+title = "ELEC3120 Trap Analysis & Answering Techniques (companion guide)"
+
+[[outputs]]
+id = "57n09r5Plcl9P6wxkOHNs"
+uri = "file://.local/hw-pdfs/ELEC3100_HW3_Solutions.pdf"
+type = "pdf"
+title = "ELEC 3100 HW3 — TA Marking Key (PDF)"
+
+[[outputs]]
+id = "8Fkxe6zdicOA7M0anCrWi"
+uri = "file://.local/fyp-deck/LearningPacer_FYP_Demo_Deck.pdf"
+type = "pdf"
+title = "LearningPacer — FYP Demo Deck v2 (PDF)"
+
+[[outputs]]
+id = "5jRG5RBPjAvwvCxWCPgdm"
+uri = "file://.local/fyp-deck/LearningPacer_FYP_Demo_Deck.pptx"
+type = "slides"
+title = "LearningPacer FYP Demo Deck (PPTX, 16 slides, polished)"
+
+[[outputs]]
+id = "HnmnudMYs-y1vPckZqe8U"
+uri = "file://.local/fyp-deck/LearningPacer_Product_Demo_Deck.pptx"
+type = "slides"
+title = "LearningPacer — Product Demo Deck (PPTX, polished v2)"

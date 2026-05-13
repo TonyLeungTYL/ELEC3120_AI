@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!--
+    LearningPacer favicon.
+    LP monogram on a dark rounded square with a small emerald network
+    node accent on the P's loop, hinting at the Computer Networks
+    course (ELEC3120) theme. A connecting line behind the letters
+    suggests a graph edge between two nodes.
+  -->
+  <defs>
+    <linearGradient id="lp-bg" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1f1f1f"/>
+      <stop offset="100%" stop-color="#0f0f0f"/>
+    </linearGradient>
+    <style>
+      .lp-pulse {
+        transform-origin: 22px 12.5px;
+        animation: lp-pulse 2.4s ease-in-out infinite;
+      }
+      @keyframes lp-pulse {
+        0%, 100% { opacity: 0.85; transform: scale(1); }
+        50%      { opacity: 1;    transform: scale(1.18); }
+      }
+    </style>
+  </defs>
+
+  <!-- Dark rounded square background -->
+  <rect x="0.5" y="0.5" width="31" height="31" rx="7.5"
+        fill="url(#lp-bg)" stroke="#2a2a2a" stroke-width="1"/>
+
+  <!-- Subtle network edge connecting the L base node to the P node -->
+  <line x1="9" y1="23.5" x2="22" y2="12.5"
+        stroke="#10b981" stroke-opacity="0.22"
+        stroke-width="1" stroke-linecap="round"/>
+
+  <!-- "L" stroke -->
+  <path d="M 9 8 L 9 23.5 L 14.5 23.5"
+        fill="none" stroke="#f5f5f5" stroke-width="2.4"
+        stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- "P" stroke: vertical bar + bowl -->
+  <path d="M 17.5 23.5 L 17.5 8 L 21.5 8
+           C 24.6 8, 26 9.8, 26 12.5
+           C 26 15.2, 24.6 17, 21.5 17 L 17.5 17"
+        fill="none" stroke="#f5f5f5" stroke-width="2.4"
+        stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Emerald network node inside the P's bowl (pulses) -->
+  <g class="lp-pulse">
+    <circle cx="22" cy="12.5" r="1.7" fill="#10b981"/>
+    <circle cx="22" cy="12.5" r="0.7" fill="#a7f3d0"/>
+  </g>
+
+  <!-- Tiny "L base" node — completes the network-edge motif -->
+  <circle cx="9" cy="23.5" r="0.9" fill="#10b981" fill-opacity="0.55"/>
+</svg>
