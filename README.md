@@ -69,9 +69,6 @@ You will need to register for these (all have free tiers).
 | `RESEND_API_KEY` | [Resend](https://resend.com) | Dashboard → API Keys | Optional (custom magic-link emails) |
 | `ADMIN_SECRET` | Make one up | Any random string | Optional (gates `/api/knowledge/seed-lectures`) |
 
-> 📖 **Step-by-step screenshots for every key:** see [DEPLOYMENT.md](./DEPLOYMENT.md)
-> 📖 **每個 key 嘅圖文教學：** 請睇 [DEPLOYMENT.md](./DEPLOYMENT.md)
-
 ---
 
 ## 🛠️ Local Development / 本地開發
