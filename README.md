@@ -25,7 +25,6 @@ Choose either platform — both are free for normal student traffic.
 
 > 👉 **First time deploying?** Read the full step-by-step guide:
 > 👉 **第一次部署？** 請睇完整圖文教學：
-> **[📖 DEPLOYMENT.md (English + 中文)](./DEPLOYMENT.md)**
 
 ---
 
