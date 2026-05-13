@@ -1,0 +1,95 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files (can opt-in for committing if needed)
+.env*
+
+# vercel
+.vercel
+
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+local-*
+.claude
+.z-ai-config
+*.log
+dev.log
+dev.out.log
+test
+prompt
+
+server.log
+# Skills directory
+/skills/
+
+# Database files
+/db/*.db
+/db/*.db-journal
+/db/*.db-wal
+
+# Agent/worklog
+worklog.md
+agent-ctx/
+
+# Upload & Download (QA screenshots, user uploads, not app code)
+/upload/
+/download/
+testperm.txt
+
+# User-uploaded lecture PDFs — ~190MB of binary assets consumed by the
+# knowledge-base seeder. Excluded here so Tailwind v4's automatic source
+# detection (which respects .gitignore) skips them; otherwise PostCSS
+# tries to scan the PDFs for class names and hangs the dev server.
+/attached_assets/
+
+# Caddy / Infra (infra-specific, not needed for GitHub)
+Caddyfile
+
+# Replit (deployment-specific)
+.replit
+replit-entrypoint.sh
+
+# Internal scripts (dev environment only)
+.zscripts/
+
+# Mini services (separate projects)
+mini-services/
+examples/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
